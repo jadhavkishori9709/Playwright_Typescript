@@ -1,0 +1,29 @@
+{
+  "name": "playwright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:chrome": "npx playwright test --project=chrome",
+    "test:firefox": "npx playwright test --project=firefox",
+    "test:webkit": "npx playwright test --project=webkit",
+    "test:headed": "npx playwright test --headed",
+    "test:debug": "npx playwright test --debug",
+    "test:ui": "npx playwright test --ui",
+    "report": "npx playwright show-report --port 0",
+    "codegen": "npx playwright codegen https://dev.giftsai.com/",
+    "claude:cost": "node -e \"const {ClaudeHelper} = require('./utils/claudeHelper'); const helper = new ClaudeHelper(); console.log(helper.getCostReport());\"",
+    "claude:examples": "npx playwright test examples/claude-usage-example.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@anthropic-ai/sdk": "^0.71.2",
+    "@playwright/test": "^1.57.0",
+    "@types/node": "^25.0.3",
+    "dotenv": "^16.6.1"
+  }
+}

@@ -1,0 +1,56 @@
+# Node modules
+node_modules/
+
+# Test results
+test-results/
+playwright-report/
+playwright/.cache/
+
+# Test data
+test-data/credentials.json
+
+# Environment variables
+.env
+
+# Screenshots and videos
+screenshots/
+videos/
+test-output/
+
+# Playwright state
+.auth/
+playwright/.auth/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Build output
+dist/
+build/
+
+# Temporary files
+*.tmp
+temp/
+.temp/
+
+# Debug files
+debug-*.png
+debug-*.html
+modal-dump.html
+*.txt
+test_*.json
+
+# Claude AI cost tracking
+.claude-costs/

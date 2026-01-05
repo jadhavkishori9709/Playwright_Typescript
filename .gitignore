@@ -6,6 +6,10 @@ test-results/
 playwright-report/
 playwright/.cache/
 
+# Ignore all test files except specified-user-signin.spec.ts
+tests/*.spec.ts
+!tests/specified-user-signin.spec.ts
+
 # Test data
 test-data/credentials.json
 
